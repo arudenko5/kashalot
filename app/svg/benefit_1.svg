@@ -1,0 +1,23 @@
+
+<svg width="96px" height="96px" viewBox="1031 190 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="48" cy="47.63782" r="41"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="82" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="48" cy="47.63782" r="47.478365"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="94.95673" height="94.95673" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Group-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1031.000000, 190.000000)">
+        <path d="M46.278023,7.58464452 L46.278023,52 L85.3956323,33.6954899 C85.3956323,33.6954899 79.7023306,21.5667904 69.6435749,14.8526118 C59.5848191,8.13843317 46.278023,7.58464452 46.278023,7.58464452 Z" id="Path-6" fill="#0C8EF1"></path>
+        <use id="Oval-3" stroke="#393939" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+        <use id="Oval-3-Copy" stroke="#393939" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+        <rect id="Rectangle-4" fill="#393939" x="44.4074074" y="24.63782" width="3.98148148" height="27.1990741" rx="1.99074074"></rect>
+        <path d="M66.6288112,39.9878914 C67.6292649,39.5424607 68.7996933,39.9885947 69.25,41 C69.6971889,42.0044028 69.2467487,43.1805846 68.2482256,43.6251557 L48.8374737,52.7308993 C47.8370201,53.17633 46.6665916,52.730196 46.2162849,51.7187907 C45.769096,50.7143879 46.2195363,49.5382061 47.2180593,49.093635" id="Rectangle-4" fill="#393939"></path>
+        <circle id="Oval-2" fill="#393939" cx="46.5" cy="51.13782" r="4"></circle>
+    </g>
+</svg>

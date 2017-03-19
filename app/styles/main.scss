@@ -1,0 +1,25 @@
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "base/base";
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.test-class{
+  background-color: transparent;
+}
+
+
+.review-author{
+  display: flex;
+  &__pic-holder{
+    width: 25px;
+    flex: none;
+  }
+}
