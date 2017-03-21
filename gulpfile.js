@@ -6,6 +6,7 @@ const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const svgSprite = require('gulp-svg-sprites');
 const svgmin = require('gulp-svgmin');
+const base64 = require('gulp-base64');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -23,6 +24,7 @@ gulp.task('styles', ['svg'], () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
+    .pipe(base64())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
@@ -38,7 +40,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('svgSprite', function() {
-  return gulp.src('app/svg/*.svg')
+  return gulp.src('app/svg/sprite/*.svg')
     .pipe(svgmin({
       js2svg: {
         pretty: true
@@ -56,7 +58,18 @@ gulp.task('svgSprite', function() {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('svg',['svgSprite']);
+gulp.task('svgRemove', function() {
+  return gulp.src('app/svg/*.svg')
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    .pipe($.if(dev, gulp.dest('.tmp/svg'), gulp.dest('dist/svg')))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('svg',['svgSprite', 'svgRemove']);
 
 function lint(files, options) {
   return gulp.src(files)

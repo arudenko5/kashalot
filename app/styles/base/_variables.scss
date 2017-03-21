@@ -2,13 +2,28 @@
 $color__base-blue: #0c8ef2;
 $color__dark-gray: #3c3d41;
 $color__base-gray: #656b6f;
-
+$color__gray: #dddddd;
+$color__one-more-gray: #474747;
+$color__satan-gray: #666;
+$color__author-name: #787878;
+$color__dot-gray: #d8d8d8;
 
 $color__light-blue: #edf4ff;
 $color__white-btn-color: #2e6bd6;
+$color__one-more-blue: #0c8ef1;
 
 $color__head-gradient-start: #3178e5;
 $color__head-gradient-end: #2961ca;
+
+$color__footer-bg: #262729;
+
+
+/* BREAKPOINTS */
+
+$screen-xs: 320px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
 
 /* SMTH */
 $icon-font-path: '../fonts/';
