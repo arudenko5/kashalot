@@ -8,6 +8,7 @@ body{
   font-family:$ff__ptsans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
 }
 button, input{
   &:focus{
@@ -39,12 +40,34 @@ ul{
       outline: none;
     }
   }
+  &--blue{
+    background-color: $color__base-blue;
+    border: 1px solid $color__base-blue;
+    color: #ffffff;
+    &:hover, &:active, &:focus{
+      text-decoration: underline;
+      color: #ffffff;
+      outline: none;
+    }
+  }
 }
-
+.nopadding{
+  padding: 0!important;
+}
+.page-wrapper{
+  min-width: 320px;
+}
 .wrapper{
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include bp($screen-sm){
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &--blue{
-    background-color: #fff;
+    background-color: $color__light-blue;
   }
   &-bg{
     position: absolute;
@@ -59,17 +82,47 @@ ul{
   }
   &__title{
     font-family:$ff__ptsans;
-    font-size: 36px;
     color: $color__dark-gray;
-    font-weight: normal;
     text-align: center;
     margin: 0 0 16px;
+
+    @include bp($screen-xs){
+      font-size: 24px;
+      font-weight: bold;
+    }
+    @include bp($screen-sm){
+      font-size: 36px;
+      font-weight: normal;
+    }
   }
   &__subtitle{
     font-family:$ff__ptsans;
     font-size: 18px;
-    color: $color__dark-gray;
+    color: $color__base-gray;
     text-align: center;
     margin: 0;
+  }
+  .container{
+    max-width: 1070px;
+  }
+}
+
+.owl-carousel{
+  .owl-dots{
+    text-align: center;
+  }
+  .owl-dot{
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: $color__dot-gray;
+    display: inline-block;
+    margin-right: 14px;
+    &.active, &:hover, &:active{
+      background-color: $color__one-more-blue;
+    }
+    &:last-of-type{
+      margin: 0;
+    }
   }
 }

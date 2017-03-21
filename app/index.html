@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Kashalot</title>
 
     <!-- Place favicon.ico in the root directory -->
@@ -29,7 +29,6 @@
     <![endif]-->
 
     <div class="page-wrapper">
-
       <header class="wrapper header">
         <div class="wrapper-bg header__bg">
           <div class="header__pattern">
@@ -48,9 +47,6 @@
             <div class="col-xs-12">
               <p class="header__logo">
                 <a href="#" class="header-logo__link">
-                  <svg class="header-logo__icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#header_logo"></use>
-                  </svg>
                   <span class="header-logo__text">Кашалот</span>
                 </a>
               </p>
@@ -82,32 +78,17 @@
 
               <div class="benefits__list">
                 <div class="benefits-list owl-carousel js-base-carousel">
-                  <div class="benefits-list__item benefits-item">
-                    <div class="benefits-item__pic">
-                      <svg class="benefits-item__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#benefit_1"></use>
-                      </svg>
-                    </div>
+                  <div class="benefits-list__item benefits-item  benefits-item--fast">
                     <p class="benefits-item__title">Быстро</p>
                     <p class="benefits-item__subtitle">Торги идут всего 2 часа</p>
                   </div>
-                  <div class="benefits-list__item benefits-item">
-                    <div class="benefits-item__pic">
-                      <svg class="benefits-item__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#benefit_2"></use>
-                      </svg>
-                    </div>
+                  <div class="benefits-list__item benefits-item benefits-item--benefit">
                     <p class="benefits-item__title">Выгодно</p>
-                    <p class="benefits-item__subtitle">Средний чек на «Кашалоте»  всего 50 грн </p>
+                    <p class="benefits-item__subtitle">Средний чек на «Кашалоте»<br> всего 50 грн </p>
                   </div>
-                  <div class="benefits-list__item benefits-item">
-                    <div class="benefits-item__pic">
-                      <svg class="benefits-item__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#benefit_3"></use>
-                      </svg>
-                    </div>
+                  <div class="benefits-list__item benefits-item benefits-item--reliable">
                     <p class="benefits-item__title">Надежно</p>
-                    <p class="benefits-item__subtitle">Модераторы пристально следят за продавцами</p>
+                    <p class="benefits-item__subtitle">Модераторы пристально следя<br>за продавцами</p>
                   </div>
                 </div>
               </div>
@@ -120,145 +101,213 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2 class="wrapper__title">Каждый день новый аукцион!</h2>
-              <p class="wrapper__subtitle">Каждый день на аукционе продают разные товары.</p>
+              <div class="auctions__header wrapper__header">
+                <h2 class="wrapper__title">Каждый день новый аукцион!</h2>
+                <p class="wrapper__subtitle">Каждый день на аукционе продают разные товары.</p>
+              </div>
 
               <div class="auctions__list">
-                <ul class="auctions-list owl-carousel">
-                  <li class="auction-list__item">
-                    <p class="auction-list__item-icon">Пн</p>
+                <div class="auctions-list owl-carousel js-auctions-carousel">
+                  <div class="auction-list__item">
+                    <p class="auction-list__item-icon active">Пн</p>
                     <p class="auction-list__item-title">День пустых шкафов</p>
                     <p class="auction-list__item-subtitle">Только одежда и обувь</p>
-                  </li>
-                  <li class="auction-list__item">
+                  </div>
+                  <div class="auction-list__item">
                     <p class="auction-list__item-icon">Вт</p>
                     <p class="auction-list__item-title">Скрытые ставки</p>
                     <p class="auction-list__item-subtitle">Ставки скрыты. Любые товары</p>
-                  </li>
-                  <li class="auction-list__item">
+                  </div>
+                  <div class="auction-list__item">
                     <p class="auction-list__item-icon">Ср</p>
                     <p class="auction-list__item-title">Распродажа</p>
                     <p class="auction-list__item-subtitle">Любые товары от 100 грн</p>
-                  </li>
-                  <li class="auction-list__item">
+                  </div>
+                  <div class="auction-list__item">
                     <p class="auction-list__item-icon">Чт</p>
                     <p class="auction-list__item-title">Без одежды</p>
                     <p class="auction-list__item-subtitle">Все, кроме одежды и обуви</p>
-                  </li>
-                  <li class="auction-list__item">
+                  </div>
+                  <div class="auction-list__item">
                     <p class="auction-list__item-icon">Пт</p>
                     <p class="auction-list__item-title">Новье</p>
                     <p class="auction-list__item-subtitle">Только новые вещи</p>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
 
               <div class="auctions__button-holder">
-                <button class="btn">Начать покупать</button>
+                <button class="btn k-btn k-btn--blue">Начать покупать</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="wrapper stuff">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2 class="wrapper__title">Что покупают на кашалоте</h2>
+      <section class="wrapper wrapper--blue stuff">
+
+              <div class="wrapper__header stuff__header">
+                <h2 class="wrapper__title">Что покупают на кашалоте</h2>
+              </div>
 
               <div class="stuff__list">
-                <ul class="stuff-list owl-carousel">
-                  <li class="stuff-item">
+                <div class="stuff-list owl-carousel js-stuff-carousel">
+                  <div class="stuff-item">
                     <div class="stuff-item__pic-holder">
-                      <img src="" alt="" class="stuff-item__pic">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
                     </div>
-                    <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
                     <p class="stuff-item__soldout">Продано за 235 грн</p>
-                  </li>
+                    </div>
+                  </div>
 
-                  <li class="stuff-item">
+                  <div class="stuff-item">
                     <div class="stuff-item__pic-holder">
-                      <img src="" alt="" class="stuff-item__pic">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
                     </div>
-                    <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
                     <p class="stuff-item__soldout">Продано за 235 грн</p>
-                  </li>
+                    </div>
+                  </div>
 
-                  <li class="stuff-item">
+                  <div class="stuff-item">
                     <div class="stuff-item__pic-holder">
-                      <img src="" alt="" class="stuff-item__pic">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
                     </div>
-                    <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
                     <p class="stuff-item__soldout">Продано за 235 грн</p>
-                  </li>
+                    </div>
+                  </div>
 
-                </ul>
+                  <div class="stuff-item">
+                    <div class="stuff-item__pic-holder">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
+                    </div>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <p class="stuff-item__soldout">Продано за 235 грн</p>
+                    </div>
+                  </div>
+
+                  <div class="stuff-item">
+                    <div class="stuff-item__pic-holder">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
+                    </div>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <p class="stuff-item__soldout">Продано за 235 грн</p>
+                    </div>
+                  </div>
+
+                  <div class="stuff-item">
+                    <div class="stuff-item__pic-holder">
+                      <img src="./images/cookie.jpg" alt="" class="stuff-item__pic">
+                    </div>
+                    <div class="stuff-item__info">
+                      <p class="stuff-item__text">Французкие вкусняшки Макаруны и прочие сладости которые не влазят в строку</p>
+                    <p class="stuff-item__soldout">Продано за 235 грн</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="wrapper reviews">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2 class="wrapper__title">Отзывы наших пользователей</h2>
-              <div class="reviews__list">
-                <ul class="reviews-list owl-carousel">
-                  <li class="review-item">
-                    <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
-                    <div class="review-item__author-block review-author">
-                      <div class="review-author__pic-holder">
-                        <img src="#" alt="" class="review-author__pic">
-                      </div>
-                      <div class="review-author__bio author-bio">
-                        <p class="author-bio__name">Юля Петрова</p>
-                        <p class="author-bio__prof">Юрист,  22 года</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="review-item">
-                    <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
-                    <div class="review-item__author-block review-author">
-                      <div class="review-author__pic-holder">
-                        <img src="#" alt="" class="review-author__pic">
-                      </div>
-                      <div class="review-author__bio author-bio">
-                        <p class="author-bio__name">Юля Петрова</p>
-                        <p class="author-bio__prof">Юрист,  22 года</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="review-item">
-                    <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
-                    <div class="review-item__author-block review-author">
-                      <div class="review-author__pic-holder">
-                        <img src="#" alt="" class="review-author__pic">
-                      </div>
-                      <div class="review-author__bio author-bio">
-                        <p class="author-bio__name">Юля Петрова</p>
-                        <p class="author-bio__prof">Юрист,  22 года</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+        <div class="wrapper__header reviews__header">
+          <h2 class="wrapper__title">Отзывы наших пользователей</h2>
+        </div>
+        <div class="reviews__list">
+          <div class="reviews-list owl-carousel js-reviews-carousel">
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <p class="review-item__text">Мне 22, я очень часто покупаю в интернете. Довольно часто не везет с размерами. Продать такую одежду сложно, а отправлять обратно — себе в убыток.</p>
+              <div class="review-item__author-block review-author">
+                <div class="review-author__pic-holder">
+                  <img src="images/user.png" alt="" class="review-author__pic">
+                </div>
+                <div class="review-author__bio author-bio">
+                  <p class="author-bio__name">Юля Петрова</p>
+                  <p class="author-bio__prof">Юрист,  22 года</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="wrapper earn">
+      <section class="wrapper wrapper--blue earn">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2 class="wrapper__title">Заработайте на залежах вещей!</h2>
-              <p class="wrapper__subtitle">Есть что продать? Аудитория Кашалота всегда рада новым интересным лотам!</p>
-
-              <div class="earn__button-hoder">
-                <button class="btn">Стать продавцом</button>
+              <div class="wrapper__header earn__header">
+                <h2 class="wrapper__title">Заработайте на залежах вещей!</h2>
+                <p class="wrapper__subtitle">Есть что продать? Аудитория Кашалота всегда рада новым интересным лотам!</p>
+              </div>
+              <div class="earn__button-holder">
+                <button class="btn k-btn k-btn--blue">Стать продавцом</button>
               </div>
             </div>
           </div>
@@ -269,15 +318,17 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-xs-9">
+            <div class="col-md-10 col-sm-9 col-xs-12">
               <div class="row">
 
-                <div class="col-xs-3">
+                <div class="col-sm-3 col-xs-12">
                   <div class="footer__logo">
-                    <a href="#" class="footer__logo-link">Кашалот</a>
+                    <a href="#" class="footer-logo__link">
+                      <span class="footer-logo__text">Кашалот</span>
+                    </a>
                   </div>
                 </div>
-                <div class="col-xs-9">
+                <div class="col-sm-9 col-xs-12">
                   <nav class="footer__menu">
                     <ul class="footer-menu">
                       <li class="footer-menu__item"><a href="#" class="footer-menu__link">Аукционы</a></li>
@@ -299,7 +350,7 @@
               </div>
             </div>
 
-            <div class="col-xs-3">
+            <div class="col-md-2 col-sm-3 col-xs-12">
               <div class="footer__gp">
                 <a href="#" class="footer__gp-link"></a>
               </div>

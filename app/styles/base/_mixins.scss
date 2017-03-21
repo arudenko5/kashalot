@@ -1,2 +1,26 @@
 @import "_variables";
 @import "_fonts";
+@mixin base_arrow{
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  width: 20px;
+  height: 40px;
+  background-size: 20px 40px;
+  margin-top: -20px;
+}
+@mixin prev_arrow{
+  @include base_arrow
+  background: transparent url('../svg/left_arrow.svg') 0 0 no-repeat;
+}
+@mixin next_arrow{
+  @include base_arrow
+  background: transparent url('../svg/right_arrow.svg') 0 0 no-repeat;
+}
+
+@mixin bp($size){
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
