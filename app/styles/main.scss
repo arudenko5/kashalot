@@ -26,9 +26,10 @@
       height: 745px;
     }
     @include bp($screen-sm){
-      top: -112px;
-      right: -583px;
-      width: 1276px;
+      top: -250px;
+      margin-left: -26px;
+      left: 50%;
+      width: 896px;
       height: 1118px;
     }
   }
@@ -39,7 +40,7 @@
   &__girl{
     position: absolute;
     left: 50%;
-    margin-left: 102px;
+    margin-left: 103px;
     bottom: 0;
     width: 373px;
     height: 520px;
@@ -58,6 +59,11 @@
     @include bp($screen-xs){
       padding:0 50px;
     }
+
+    @include bp($screen-sm){
+      padding: 0;
+    }
+
     @include bp($screen-md){
       padding-left: 60px;
     }
@@ -76,9 +82,12 @@
     @include bp($screen-sm){
       text-align: left;
       font-weight: normal;
-      font-size: 48px;
+      font-size: 30px;
       line-height: 1.17;
       letter-spacing:-1.6px;
+    }
+    @include bp($screen-md){
+      font-size: 48px;
     }
   }
   &__subtitle{
@@ -93,8 +102,11 @@
     }
     @include bp($screen-sm){
       text-align: left;
-      font-size: 22px;
+      font-size: 18px;
       margin: 28px 0 0;
+    }
+    @include bp($screen-md){
+      font-size: 22px;
     }
   }
   &__logo{
